@@ -294,10 +294,6 @@ class PayoneClient
 
         $response = $this->parseResponse($response);
 
-        if ($response->status == 'ERROR') {
-            throw new ResponseException($response);
-        }
-
         return $response;
     }
 
