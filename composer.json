@@ -1,6 +1,6 @@
 {
     "name": "bengthagemeister/payone-api-php",
-    "license": "GNU GENERAL PUBLIC LICENSE",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Bengt Hagemeister",
