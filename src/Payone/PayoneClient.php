@@ -312,7 +312,7 @@ class PayoneClient
         $keyValuePairs = explode("\n", $response->getBody());
 
         foreach ($keyValuePairs as $item) {
-            $keyValuePair = explode('=', trim($item));
+            $keyValuePair = explode('=', trim($item), 2);
 
             if (count($keyValuePair) == 2) $result[trim($keyValuePair[0])] = trim($keyValuePair[1]);
         }
