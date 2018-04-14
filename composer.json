@@ -1,10 +1,10 @@
 {
-    "name": "localticketing/payone-api-php",
-    "license": "BSD-2-Clause",
+    "name": "bengthagemeister/payone-api-php",
+    "license": "GNU GENERAL PUBLIC LICENSE",
     "authors": [
         {
-            "name": "localTicketing",
-            "email": "info@localticketing.de"
+            "name": "Bengt Hagemeister",
+            "email": "bengt@localticketing.de"
         }
     ],
     "require": {
