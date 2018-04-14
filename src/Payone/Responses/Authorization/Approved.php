@@ -11,91 +11,91 @@ class Approved extends Response {
     /**
      * @var
      */
-    protected $txid;
+    public $txid;
     /**
      * @var
      */
-    protected $userid;
+    public $userid;
     /**
      * @var
      */
-    protected $clearing_bankaccountholder;
+    public $clearing_bankaccountholder;
     /**
      * @var
      */
-    protected $clearing_bankcountry;
+    public $clearing_bankcountry;
     /**
      * @var
      */
-    protected $clearing_bankaccount;
+    public $clearing_bankaccount;
     /**
      * @var
      */
-    protected $clearing_bankcode;
+    public $clearing_bankcode;
     /**
      * @var
      */
-    protected $clearing_bankiban;
+    public $clearing_bankiban;
     /**
      * @var
      */
-    protected $clearing_bankbic;
+    public $clearing_bankbic;
     /**
      * @var
      */
-    protected $clearing_bankcity;
+    public $clearing_bankcity;
     /**
      * @var
      */
-    protected $clearing_bankname;
+    public $clearing_bankname;
     /**
      * @var
      */
-    protected $clearing_instructionnote;
+    public $clearing_instructionnote;
     /**
      * @var
      */
-    protected $mandate_identification;
+    public $mandate_identification;
     /**
      * @var
      */
-    protected $mandate_dateofsignature;
+    public $mandate_dateofsignature;
     /**
      * @var
      */
-    protected $creditor_identifier;
+    public $creditor_identifier;
     /**
      * @var
      */
-    protected $creditor_name;
+    public $creditor_name;
     /**
      * @var
      */
-    protected $creditor_street;
+    public $creditor_street;
     /**
      * @var
      */
-    protected $creditor_zip;
+    public $creditor_zip;
     /**
      * @var
      */
-    protected $creditor_city;
+    public $creditor_city;
     /**
      * @var
      */
-    protected $creditor_country;
+    public $creditor_country;
     /**
      * @var
      */
-    protected $creditor_email;
+    public $creditor_email;
     /**
      * @var
      */
-    protected $clearing_date;
+    public $clearing_date;
     /**
      * @var
      */
-    protected $clearing_amount;
+    public $clearing_amount;
 
     /**
      * @return mixed

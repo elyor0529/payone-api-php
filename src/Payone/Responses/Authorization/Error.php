@@ -8,9 +8,9 @@ use Payone\Responses\Response;
 
 class Error extends Response {
 
-    protected $errorcode = null;
-    protected $errormessage = null;
-    protected $customermessage = null;
+    public $errorcode = null;
+    public $errormessage = null;
+    public $customermessage = null;
 
     /**
      * @return null

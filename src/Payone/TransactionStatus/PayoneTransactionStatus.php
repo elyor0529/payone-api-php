@@ -8,167 +8,167 @@ use Payone\TransactionStatus\Validation\Key;
 
 class PayoneTransactionStatus {
 
-    protected $key = null;
+    public $key = null;
     /**
      * @var string
      */
-    protected $txaction = null;
+    public $txaction = null;
     /**
      * @var string
      */
-    protected $mode = null;
+    public $mode = null;
     /**
      * @var int Payment portal ID
      */
-    protected $portalid = null;
+    public $portalid = null;
     /**
      * @var int Account ID (subaccount ID)
      */
-    protected $aid = null;
+    public $aid = null;
     /**     *
      * @var string
      */
-    protected $clearingtype = null;
+    public $clearingtype = null;
     /**
      * unix timestamp
      *
      * @var int
      */
-    protected $txtime = null;
+    public $txtime = null;
     /**
      * @var string ISO-4217
      */
-    protected $currency = null;
+    public $currency = null;
     /**
      * @var int
      */
-    protected $userid = null;
+    public $userid = null;
     /**
      * @var int
      */
-    protected $customerid = null;
+    public $customerid = null;
     /**
      * @var string
      */
-    protected $param = null;
+    public $param = null;
 
     // Parameter bei einer Statusmeldung eines Zahlungsvorgangs
 
     /**
      * @var int
      */
-    protected $txid = null;
+    public $txid = null;
     /**
      * @var string
      */
-    protected $reference = null;
+    public $reference = null;
     /**
      * @var string
      */
-    protected $sequencenumber = null;
+    public $sequencenumber = null;
     /**
      * @var string
      */
-    protected $receivable = null;
+    public $receivable = null;
     /**
      * @var string
      */
-    protected $balance = null;
+    public $balance = null;
     /**
      * @var string
      */
-    protected $failedcause = null;
+    public $failedcause = null;
 
     // Zusätzliche Parameter Contract bei Statusmeldung eines Zahlungsvorgangs
 
     /**
      * @var int
      */
-    protected $productid = null;
+    public $productid = null;
     /**
      * @var int
      */
-    protected $accessid = null;
+    public $accessid = null;
 
     // Zusätzliche Parameter Collect (txaction=reminder) bei Statusmeldung eines Zahlungsvorgangs
 
     /**
      * @var string
      */
-    protected $reminderlevel = null;
+    public $reminderlevel = null;
 
     // Parameter Invoicing (txaction=invoice)
 
     /**
      * @var string
      */
-    protected $invoiceid = null;
+    public $invoiceid = null;
     /**
      * @var string
      */
-    protected $invoice_grossamount = null;
+    public $invoice_grossamount = null;
     /**
      * @var string
      */
-    protected $invoice_date = null;
+    public $invoice_date = null;
     /**
      * @var string
      */
-    protected $invoice_deliverydate = null;
+    public $invoice_deliverydate = null;
     /**
      * @var string
      */
-    protected $invoice_deliveryenddate = null;
+    public $invoice_deliveryenddate = null;
 
 
     /**
      * @var string
      */
-    protected $clearing_bankaccountholder = null;
+    public $clearing_bankaccountholder = null;
     /**
      * @var string
      */
-    protected $clearing_bankcountry = null;
+    public $clearing_bankcountry = null;
     /**
      * @var string
      */
-    protected $clearing_bankaccount = null;
+    public $clearing_bankaccount = null;
     /**
      * @var string
      */
-    protected $clearing_bankcode = null;
+    public $clearing_bankcode = null;
     /**
      * @var string
      */
-    protected $clearing_bankiban = null;
+    public $clearing_bankiban = null;
     /**
      * @var string
      */
-    protected $clearing_bankbic = null;
+    public $clearing_bankbic = null;
     /**
      * @var string
      */
-    protected $clearing_bankcity = null;
+    public $clearing_bankcity = null;
     /**
      * @var string
      */
-    protected $clearing_bankname = null;
+    public $clearing_bankname = null;
 
 
     /** @var string */
-    protected $clearing_legalnote = null;
+    public $clearing_legalnote = null;
 
     /**
      * (YYYYMMDD)
      * @var string
      */
-    protected $clearing_duedate = null;
+    public $clearing_duedate = null;
 
     /** @var string */
-    protected $clearing_reference = null;
+    public $clearing_reference = null;
 
     /** @var string */
-    protected $clearing_instructionnote = null;
+    public $clearing_instructionnote = null;
 
     /**
      * @throws Exceptions\InvalidKey

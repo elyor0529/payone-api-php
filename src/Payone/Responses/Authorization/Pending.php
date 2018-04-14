@@ -8,8 +8,8 @@ use Payone\Responses\Response;
 
 class Pending extends Response {
 
-    protected $txid = null;
-    protected $userid = null;
+    public $txid = null;
+    public $userid = null;
 
     /**
      * @return null

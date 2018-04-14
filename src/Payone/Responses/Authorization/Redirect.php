@@ -7,9 +7,9 @@ use Payone\Responses\Response;
 
 class Redirect extends Response {
 
-    protected $txid = null;
-    protected $userid = null;
-    protected $redirecturl = null;
+    public $txid = null;
+    public $userid = null;
+    public $redirecturl = null;
 
     /**
      * @return null
