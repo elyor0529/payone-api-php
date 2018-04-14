@@ -1,0 +1,18 @@
+{
+    "name": "localticketing/payone-api-php",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "localTicketing",
+            "email": "info@localticketing.de"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payone\\": "src/Payone/"
+        }
+    }
+}
