@@ -11,7 +11,8 @@ use Payone\Requests\Capture;
 use Payone\Requests\Preauthorization;
 use Payone\Requests\Refund;
 
-class PayoneClient {
+class PayoneClient
+{
 
     /**
      *
@@ -252,7 +253,7 @@ class PayoneClient {
             'key'         => $this->getKey(),
             'api_version' => $this->getApiVersion(),
             'mode'        => $this->getMode(),
-            'encoding'    => $this->getEncoding()
+            'encoding'    => $this->getEncoding(),
         ];
     }
 
@@ -285,20 +286,17 @@ class PayoneClient {
 
         $client = new Client();
 
-        try
-        {
+        try {
             $response = $client->request('POST', $this->api_endpoint, ['form_params' => $request]);
-        } catch (\Exception $e)
-        {
+        } catch (\Exception $e) {
             throw new ConnectionException('Connection Error', 0, $e);
         }
 
         $response = $this->parseResponse($response);
 
-//        if ($response->status == 'ERROR')
-//        {
-//            throw new ResponseException($response);
-//        }
+        if ($response->status == 'ERROR') {
+            throw new ResponseException($response);
+        }
 
         return $response;
     }
@@ -313,8 +311,7 @@ class PayoneClient {
 
         $keyValuePairs = explode("\n", $response->getBody());
 
-        foreach ($keyValuePairs as $item)
-        {
+        foreach ($keyValuePairs as $item) {
             $keyValuePair = explode('=', trim($item));
 
             if (count($keyValuePair) == 2) $result[trim($keyValuePair[0])] = trim($keyValuePair[1]);
